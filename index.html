@@ -113,8 +113,10 @@ bot.connect();</code></pre>
 				</a>
 				<p>There are multiple optional libraries which could be installed in addition to node-discord to improve performance.</p>
 				<ul>
-					<li><strong>erlpack</strong> - Provides fast encoding and decoding for WebSocket payloads.</li>
-					<li><strong>zlib-sync</strong> - Compresses and decompresses WebSocket payloads before attempting to parse them.</li>
+					<li><strong><a href="https://github.com/discord/erlpack">discord/erlpack</a></strong> - Provides fast encoding and decoding for WebSocket payloads.</li>
+					<li><strong><a href="https://www.npmjs.com/package/zlib-sync">zlib-sync</a></strong> - Compresses and decompresses WebSocket payloads before attempting to parse them.</li>
+					<li><strong><a href="https://www.npmjs.com/package/opusscript">OpusScript</a></strong> - Decodes and encodes opus encoded voice packets. <strong>Needed for voice support</strong></li>
+					<li><strong><a href="https://www.npmjs.com/package/sodium-native">sodium-native</a></strong> - Decodes incoming voice packets from Discord. <strong>Needed for voice support</strong></li>
 				</ul>
 			</div>
 		</div>
@@ -195,6 +197,9 @@ bot.connect();</code></pre>
 						<a href="enums/mfalevel.html" class="tsd-kind-icon">MFALevel</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/mute_state.html" class="tsd-kind-icon">MUTE_<wbr>STATE</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/messageactivitytype.html" class="tsd-kind-icon">Message<wbr>Activity<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -256,6 +261,9 @@ bot.connect();</code></pre>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/userflag.html" class="tsd-kind-icon">User<wbr>Flag</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/voice_opcodes.html" class="tsd-kind-icon">VOICE_<wbr>OPCODES</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/verificationlevel.html" class="tsd-kind-icon">Verification<wbr>Level</a>
@@ -365,6 +373,9 @@ bot.connect();</code></pre>
 					<li class=" tsd-kind-class">
 						<a href="classes/commandshandler.html" class="tsd-kind-icon">Commands<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/connection.html" class="tsd-kind-icon">Connection</a>
+					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/controllercache.html" class="tsd-kind-icon">Controller<wbr>Cache</a>
 					</li>
@@ -439,6 +450,12 @@ bot.connect();</code></pre>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/guildunavailable.html" class="tsd-kind-icon">Guild<wbr>Unavailable</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/guildvoice.html" class="tsd-kind-icon">Guild<wbr>Voice</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/guildvoicechannel.html" class="tsd-kind-icon">Guild<wbr>Voice<wbr>Channel</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/guildwebhookscontroller.html" class="tsd-kind-icon">Guild<wbr>Webhooks<wbr>Controller</a>
@@ -522,10 +539,22 @@ bot.connect();</code></pre>
 						<a href="classes/timestamp.html" class="tsd-kind-icon">Timestamp</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/udpsocket.html" class="tsd-kind-icon">UDPSocket</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/user.html" class="tsd-kind-icon">User</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/userflags.html" class="tsd-kind-icon">User<wbr>Flags</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/voiceheartbeats.html" class="tsd-kind-icon">Voice<wbr>Heartbeats</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/voicestate.html" class="tsd-kind-icon">Voice<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/voicewebsocket.html" class="tsd-kind-icon">Voice<wbr>Web<wbr>Socket</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/webhook.html" class="tsd-kind-icon">Webhook</a>
@@ -586,6 +615,9 @@ bot.connect();</code></pre>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/gatewaybot.html" class="tsd-kind-icon">Gateway<wbr>Bot</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gatewaycommand.html" class="tsd-kind-icon">Gateway<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/guildafk.html" class="tsd-kind-icon">GuildAFK</a>
@@ -798,6 +830,15 @@ bot.connect();</code></pre>
 						<a href="interfaces/updatestatus.html" class="tsd-kind-icon">Update<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/voicecommand.html" class="tsd-kind-icon">Voice<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/voicepayload.html" class="tsd-kind-icon">Voice<wbr>Payload</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/voicestatedata.html" class="tsd-kind-icon">Voice<wbr>State<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/websocketoptions.html" class="tsd-kind-icon">Websocket<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -843,9 +884,6 @@ bot.connect();</code></pre>
 						<a href="globals.html#nullable" class="tsd-kind-icon">Nullable</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#optionallibrary" class="tsd-kind-icon">Optional<wbr>Library</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#params" class="tsd-kind-icon">Params</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
@@ -871,6 +909,15 @@ bot.connect();</code></pre>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#textbasedchannel" class="tsd-kind-icon">Text<wbr>Based<wbr>Channel</a>
+					</li>
+					<li class=" tsd-kind-event">
+						<a href="globals.html#voice_state_update" class="tsd-kind-icon">VOICE_<wbr>STATE_<wbr>UPDATE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#libsodium" class="tsd-kind-icon">Lib<wbr>Sodium</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#opusscript" class="tsd-kind-icon">Opus<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#unreconnectablegatewayclosecodes" class="tsd-kind-icon">Unreconnectable<wbr>Gateway<wbr>Close<wbr>Codes</a>
@@ -948,6 +995,7 @@ bot.connect();</code></pre>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
