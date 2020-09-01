@@ -95,7 +95,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="voicestate.html#member" class="tsd-kind-icon">member</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="voicestate.html#muted" class="tsd-kind-icon">muted</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="voicestate.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="voicestate.html#mute_state" class="tsd-kind-icon">MUTE_<wbr>STATE</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -109,6 +108,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="voicestate.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="voicestate.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="voicestate.html#isonvoice" class="tsd-kind-icon">is<wbr>OnVoice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="voicestate.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -121,14 +121,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Voice<wbr>State<span class="tsd-signature-symbol">(</span>bot<span class="tsd-signature-symbol">: </span><a href="bot.html" class="tsd-signature-type">Bot</a>, member<span class="tsd-signature-symbol">: </span><a href="member.html" class="tsd-signature-type">Member</a>, voiceState<span class="tsd-signature-symbol">: </span><a href="../globals.html#gatewaystruct" class="tsd-signature-type">GatewayStruct</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="voicestate.html" class="tsd-signature-type">VoiceState</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Voice<wbr>State<span class="tsd-signature-symbol">(</span>bot<span class="tsd-signature-symbol">: </span><a href="bot.html" class="tsd-signature-type">Bot</a>, member<span class="tsd-signature-symbol">: </span><a href="member.html" class="tsd-signature-type">Member</a>, voiceState<span class="tsd-signature-symbol">: </span><a href="../globals.html#gatewaystruct" class="tsd-signature-type">GatewayStruct</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/voicestatedata.html" class="tsd-signature-type">VoiceStateData</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="voicestate.html" class="tsd-signature-type">VoiceState</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basestruct.html">BaseStruct</a>.<a href="basestruct.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L34">src/structures/voice/VoiceState.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L27">src/structures/voice/VoiceState.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -140,7 +140,7 @@
 									<h5>member: <a href="member.html" class="tsd-signature-type">Member</a></h5>
 								</li>
 								<li>
-									<h5>voiceState: <a href="../globals.html#gatewaystruct" class="tsd-signature-type">GatewayStruct</a></h5>
+									<h5>voiceState: <a href="../globals.html#gatewaystruct" class="tsd-signature-type">GatewayStruct</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/voicestatedata.html" class="tsd-signature-type">VoiceStateData</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="voicestate.html" class="tsd-signature-type">VoiceState</a></h4>
@@ -157,7 +157,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="basestruct.html">BaseStruct</a>.<a href="basestruct.html#bot">bot</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/base/BaseStruct.ts#L28">src/structures/base/BaseStruct.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/base/BaseStruct.ts#L28">src/structures/base/BaseStruct.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -169,10 +169,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="deafen" class="tsd-anchor"></a>
 					<h3>deafen</h3>
-					<div class="tsd-signature tsd-kind-icon">deafen<span class="tsd-signature-symbol">:</span> <a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a></div>
+					<div class="tsd-signature tsd-kind-icon">deafen<span class="tsd-signature-symbol">:</span> <a href="muteflags.html" class="tsd-signature-type">MuteFlags</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L30">src/structures/voice/VoiceState.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L25">src/structures/voice/VoiceState.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,17 +182,17 @@
 					<div class="tsd-signature tsd-kind-icon">member<span class="tsd-signature-symbol">:</span> <a href="member.html" class="tsd-signature-type">Member</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L32">src/structures/voice/VoiceState.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L27">src/structures/voice/VoiceState.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="muted" class="tsd-anchor"></a>
 					<h3>muted</h3>
-					<div class="tsd-signature tsd-kind-icon">muted<span class="tsd-signature-symbol">:</span> <a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a></div>
+					<div class="tsd-signature tsd-kind-icon">muted<span class="tsd-signature-symbol">:</span> <a href="muteflags.html" class="tsd-signature-type">MuteFlags</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L31">src/structures/voice/VoiceState.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L26">src/structures/voice/VoiceState.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,17 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L29">src/structures/voice/VoiceState.ts:29</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="mute_state" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> MUTE_<wbr>STATE</h3>
-					<div class="tsd-signature tsd-kind-icon">MUTE_<wbr>STATE<span class="tsd-signature-symbol">:</span> <a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a><span class="tsd-signature-symbol"> = MUTE_STATE</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L34">src/structures/voice/VoiceState.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L24">src/structures/voice/VoiceState.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L58">src/structures/voice/VoiceState.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L55">src/structures/voice/VoiceState.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../globals.html#nullable" class="tsd-signature-type">Nullable</a><span class="tsd-signature-symbol">&lt;</span><a href="guildvoicechannel.html" class="tsd-signature-type">GuildVoiceChannel</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -250,7 +240,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basestruct.html">BaseStruct</a>.<a href="basestruct.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/base/BaseStruct.ts#L55">src/structures/base/BaseStruct.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/base/BaseStruct.ts#L55">src/structures/base/BaseStruct.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -273,7 +263,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="basestruct.html">BaseStruct</a>.<a href="basestruct.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/voice/VoiceState.ts#L44">src/structures/voice/VoiceState.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L37">src/structures/voice/VoiceState.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,6 +273,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isonvoice" class="tsd-anchor"></a>
+					<h3>is<wbr>OnVoice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>OnVoice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/voice/VoiceState.ts#L51">src/structures/voice/VoiceState.ts:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -297,7 +304,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="basestruct.html">BaseStruct</a>.<a href="basestruct.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/f9b7c6c/src/structures/base/BaseStruct.ts#L64">src/structures/base/BaseStruct.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/base/BaseStruct.ts#L64">src/structures/base/BaseStruct.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,9 +360,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="voicestate.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="voicestate.html#mute_state" class="tsd-kind-icon">MUTE_<wbr>STATE</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="voicestate.html#currentchannel" class="tsd-kind-icon">current<wbr>Channel</a>
 							</li>
@@ -364,6 +368,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="voicestate.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="voicestate.html#isonvoice" class="tsd-kind-icon">is<wbr>OnVoice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="voicestate.html#update" class="tsd-kind-icon">update</a>

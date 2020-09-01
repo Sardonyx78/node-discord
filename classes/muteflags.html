@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GuildSystemChannelFlags | node-discord</title>
+	<title>MuteFlags | node-discord</title>
 	<meta name="description" content="Documentation for node-discord">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="guildsystemchannelflags.html">GuildSystemChannelFlags</a>
+					<a href="muteflags.html">MuteFlags</a>
 				</li>
 			</ul>
-			<h1>Class GuildSystemChannelFlags</h1>
+			<h1>Class MuteFlags</h1>
 		</div>
 	</div>
 </header>
@@ -68,10 +68,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="flags.html" class="tsd-signature-type">Flags</a><span class="tsd-signature-symbol">&lt;</span><a href="../enums/systemchannelflag.html" class="tsd-signature-type">SystemChannelFlag</a><span class="tsd-signature-symbol">&gt;</span>
+						<a href="flags.html" class="tsd-signature-type">Flags</a><span class="tsd-signature-symbol">&lt;</span><a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">GuildSystemChannelFlags</span>
+								<span class="target">MuteFlags</span>
 							</li>
 						</ul>
 					</li>
@@ -81,42 +81,42 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="guildsystemchannelflags.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="muteflags.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="guildsystemchannelflags.html#bits" class="tsd-kind-icon">bits</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="muteflags.html#bits" class="tsd-kind-icon">bits</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="guildsystemchannelflags.html#has" class="tsd-kind-icon">has</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="guildsystemchannelflags.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="muteflags.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="muteflags.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Guild<wbr>System<wbr>Channel<wbr>Flags<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="guildsystemchannelflags.html" class="tsd-signature-type">GuildSystemChannelFlags</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Mute<wbr>Flags<span class="tsd-signature-symbol">(</span>flags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="muteflags.html" class="tsd-signature-type">MuteFlags</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="flags.html">Flags</a>.<a href="flags.html#constructor">constructor</a></p>
+								<p>Overrides <a href="flags.html">Flags</a>.<a href="flags.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/flags/Flags.ts#L9">src/structures/flags/Flags.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/86f5c65/src/structures/flags/MuteFlags.ts#L8">src/structures/flags/MuteFlags.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -125,7 +125,7 @@
 									<h5>flags: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="guildsystemchannelflags.html" class="tsd-signature-type">GuildSystemChannelFlags</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="muteflags.html" class="tsd-signature-type">MuteFlags</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -162,7 +162,7 @@
 					<a name="has" class="tsd-anchor"></a>
 					<h3>has</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/systemchannelflag.html" class="tsd-signature-type">SystemChannelFlag</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -180,7 +180,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>flag: <a href="../enums/systemchannelflag.html" class="tsd-signature-type">SystemChannelFlag</a></h5>
+									<h5>flag: <a href="../enums/mute_state.html" class="tsd-signature-type">MUTE_STATE</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The flag to check if included</p>
 									</div>
@@ -243,19 +243,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="guildsystemchannelflags.html" class="tsd-kind-icon">Guild<wbr>System<wbr>Channel<wbr>Flags</a>
+						<a href="muteflags.html" class="tsd-kind-icon">Mute<wbr>Flags</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-								<a href="guildsystemchannelflags.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="muteflags.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="guildsystemchannelflags.html#bits" class="tsd-kind-icon">bits</a>
+								<a href="muteflags.html#bits" class="tsd-kind-icon">bits</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="guildsystemchannelflags.html#has" class="tsd-kind-icon">has</a>
+								<a href="muteflags.html#has" class="tsd-kind-icon">has</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
-								<a href="guildsystemchannelflags.html#from" class="tsd-kind-icon">from</a>
+								<a href="muteflags.html#from" class="tsd-kind-icon">from</a>
 							</li>
 						</ul>
 					</li>
