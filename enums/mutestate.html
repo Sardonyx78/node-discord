@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PresenceClientStatusIndicator | node-discord</title>
+	<title>MuteState | node-discord</title>
 	<meta name="description" content="Documentation for node-discord">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="presenceclientstatusindicator.html">PresenceClientStatusIndicator</a>
+					<a href="mutestate.html">MuteState</a>
 				</li>
 			</ul>
-			<h1>Enumeration PresenceClientStatusIndicator</h1>
+			<h1>Enumeration MuteState</h1>
 		</div>
 	</div>
 </header>
@@ -71,9 +71,9 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="presenceclientstatusindicator.html#dnd" class="tsd-kind-icon">DND</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="presenceclientstatusindicator.html#idle" class="tsd-kind-icon">Idle</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="presenceclientstatusindicator.html#online" class="tsd-kind-icon">Online</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="mutestate.html#force" class="tsd-kind-icon">FORCE</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="mutestate.html#none" class="tsd-kind-icon">NONE</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="mutestate.html#self" class="tsd-kind-icon">SELF</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,32 +82,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="dnd" class="tsd-anchor"></a>
-					<h3>DND</h3>
-					<div class="tsd-signature tsd-kind-icon">DND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;dnd&quot;</span></div>
+					<a name="force" class="tsd-anchor"></a>
+					<h3>FORCE</h3>
+					<div class="tsd-signature tsd-kind-icon">FORCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1 &lt;&lt; 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/member/MemberPresence.ts#L205">src/structures/member/MemberPresence.ts:205</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/flags/MuteFlags.ts#L5">src/structures/flags/MuteFlags.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="idle" class="tsd-anchor"></a>
-					<h3>Idle</h3>
-					<div class="tsd-signature tsd-kind-icon">Idle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;idle&quot;</span></div>
+					<a name="none" class="tsd-anchor"></a>
+					<h3>NONE</h3>
+					<div class="tsd-signature tsd-kind-icon">NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1 &lt;&lt; 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/member/MemberPresence.ts#L204">src/structures/member/MemberPresence.ts:204</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/flags/MuteFlags.ts#L6">src/structures/flags/MuteFlags.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="online" class="tsd-anchor"></a>
-					<h3>Online</h3>
-					<div class="tsd-signature tsd-kind-icon">Online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;online&quot;</span></div>
+					<a name="self" class="tsd-anchor"></a>
+					<h3>SELF</h3>
+					<div class="tsd-signature tsd-kind-icon">SELF<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1 &lt;&lt; 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/member/MemberPresence.ts#L203">src/structures/member/MemberPresence.ts:203</a></li>
+							<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/a4fda8a/src/structures/flags/MuteFlags.ts#L4">src/structures/flags/MuteFlags.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -126,16 +126,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="presenceclientstatusindicator.html" class="tsd-kind-icon">Presence<wbr>Client<wbr>Status<wbr>Indicator</a>
+						<a href="mutestate.html" class="tsd-kind-icon">Mute<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="presenceclientstatusindicator.html#dnd" class="tsd-kind-icon">DND</a>
+								<a href="mutestate.html#force" class="tsd-kind-icon">FORCE</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="presenceclientstatusindicator.html#idle" class="tsd-kind-icon">Idle</a>
+								<a href="mutestate.html#none" class="tsd-kind-icon">NONE</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="presenceclientstatusindicator.html#online" class="tsd-kind-icon">Online</a>
+								<a href="mutestate.html#self" class="tsd-kind-icon">SELF</a>
 							</li>
 						</ul>
 					</li>
