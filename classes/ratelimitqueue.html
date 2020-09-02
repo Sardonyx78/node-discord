@@ -126,6 +126,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="ratelimitqueue.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="ratelimitqueue.html#find" class="tsd-kind-icon">find</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ratelimitqueue.html#findindex" class="tsd-kind-icon">find<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="ratelimitqueue.html#flat" class="tsd-kind-icon">flat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="ratelimitqueue.html#flatmap" class="tsd-kind-icon">flat<wbr>Map</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ratelimitqueue.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ratelimitqueue.html#free" class="tsd-kind-icon">free</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ratelimitqueue.html#includes" class="tsd-kind-icon">includes</a></li>
@@ -165,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/ff4663a/src/api/rateLimit/RateLimitQueue.ts#L39">src/api/rateLimit/RateLimitQueue.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/7a21c53/src/api/rateLimit/RateLimitQueue.ts#L39">src/api/rateLimit/RateLimitQueue.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -290,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/ff4663a/src/api/rateLimit/RateLimitQueue.ts#L54">src/api/rateLimit/RateLimitQueue.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/7a21c53/src/api/rateLimit/RateLimitQueue.ts#L54">src/api/rateLimit/RateLimitQueue.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,6 +874,129 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="flat" class="tsd-anchor"></a>
+					<h3>flat</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">flat&lt;A, D&gt;<span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span>, depth<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FlatArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="ratelimitqueue.html">RateLimitQueue</a>.<a href="ratelimitqueue.html#flat">flat</a></p>
+								<ul>
+									<li>Defined in node_modules/typescript/lib/lib.es2019.array.d.ts:81</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new array with all sub-array elements concatenated into it recursively up to the
+									specified depth.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>D<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>this: <span class="tsd-signature-type">A</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> depth: <a href="" class="tsd-signature-type">D</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The maximum recursion depth</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FlatArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="flatmap" class="tsd-anchor"></a>
+					<h3>flat<wbr>Map</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">flat<wbr>Map&lt;U, This&gt;<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span>, value<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">This</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="ratelimitqueue.html">RateLimitQueue</a>.<a href="ratelimitqueue.html#flatmap">flatMap</a></p>
+								<ul>
+									<li>Defined in node_modules/typescript/lib/lib.es2019.array.d.ts:70</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calls a defined callback function on each element of an array. Then, flattens the result into
+										a new array.
+									This is identical to a map followed by flat with depth 1.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U</h4>
+								</li>
+								<li>
+									<h4>This</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span>, value<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A function that accepts up to three arguments. The flatMap method calls the
+										callback function one time for each element in the array.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>this<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">This</span>, value<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>this: <span class="tsd-signature-type">This</span></h5>
+														</li>
+														<li>
+															<h5>value: <a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a></h5>
+														</li>
+														<li>
+															<h5>index: <span class="tsd-signature-type">number</span></h5>
+														</li>
+														<li>
+															<h5>array: <a href="../interfaces/ratelimitqueueitem.html" class="tsd-signature-type">RateLimitQueueItem</a><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <a href="" class="tsd-signature-type">This</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An object to which the this keyword can refer in the callback function. If
+										thisArg is omitted, undefined is used as the this value.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="foreach" class="tsd-anchor"></a>
 					<h3>for<wbr>Each</h3>
@@ -944,7 +1069,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/ff4663a/src/api/rateLimit/RateLimitQueue.ts#L75">src/api/rateLimit/RateLimitQueue.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/Sardonyx78/node-discord/blob/7a21c53/src/api/rateLimit/RateLimitQueue.ts#L75">src/api/rateLimit/RateLimitQueue.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2001,6 +2126,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="ratelimitqueue.html#findindex" class="tsd-kind-icon">find<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="ratelimitqueue.html#flat" class="tsd-kind-icon">flat</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="ratelimitqueue.html#flatmap" class="tsd-kind-icon">flat<wbr>Map</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="ratelimitqueue.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
